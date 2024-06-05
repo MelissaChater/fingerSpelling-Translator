@@ -16,33 +16,33 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     flex: 1;
     position: relative; 
 }
 
 .testointelligenza {
     width: 100%;
-    height: 300px;
+    height: 18.75rem;
     resize: none;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     background-color: lightgray;
-    border-radius: 20px;
-    padding: 20px;
+    border-radius: 1.25rem;
+    padding: 1.25rem;
 }
 
 button.download-btn {
     margin-top: auto;
     font-family: "TrenchThin", serif;
     align-self: center; 
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     background-color: lightgray;
     color: #009cfc;
     border: none;
     cursor: pointer;
-    border-radius: 99px;
+    border-radius: 6.188rem;
     font-size: 1.2rem;
-    border: 3px solid #009cfc ;
+    border: 0.188rem solid #009cfc ;
 }
 
 .btn {
@@ -52,7 +52,7 @@ button.download-btn {
     height: auto;
     border-radius: 5rem;
     background-image: linear-gradient(135deg, #80a0b5 0%, #3b7b9f 100%);
-    box-shadow: 0 20px 30px -6px rgba(120, 137, 153, 0.9);
+    box-shadow: 0 1.25rem 1.875rem -6px rgba(120, 137, 153, 0.9);
     outline: none;
     cursor: pointer;
     border: none;
@@ -116,10 +116,10 @@ header {
 }
 
 .logoPiccolo img {
-    width: 50px;
-    height: 60px;
+    width: 3.5rem;
+    height: 3.75rem;
     vertical-align: middle;
-    margin-right: 10px;
+    margin-right: 0.625rem;
 }
 
 .logoPiccolo h1 {
@@ -129,23 +129,23 @@ header {
 }
 
 .input-container {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     flex: 1;
 }
 
 button {
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     background-color: #88919C;
     color: #fff;
     border: none;
     cursor: pointer;
-    border-radius: 34px;
+    border-radius: 2.125rem;
 }
 
 select {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 0.625rem;
+    margin-bottom: 0.625rem;
 }
 
 .camera-container img {
@@ -178,30 +178,30 @@ select {
     --main-color: #009cfc;
     --secondary-color: #b6c0cb;
     position: relative;
-    padding-left: 10px;
-    width: 270px;
-    height: 36px;
+    padding-left: 0.625rem;
+    width: 16.875rem;
+    height: 2.25rem;
     background-color: var(--bg-color);
-    border: 3px solid var(--main-color);
+    border: 0.188rem solid var(--main-color);
     border-radius: 1000px;
     display: flex;
     flex-direction: row;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .option {
-    margin-right: 5px;
-    width: 80.5px;
-    height: 28px;
+    margin-right: 0.313rem;
+    width: 5.031rem;
+    height: 1.75rem;
     position: relative;
-    top: 4px;
-    left: 2px;
+    top: 0.25rem;
+    left: 0.125rem;
     border-radius: 1000px;
     transition: 0.25s cubic-bezier(0, 0, 0, 1);
 }
 
 .option:last-child {
-    margin-right: 4px;
+    margin-right: 0.25rem;
 }
 
 .option:hover {
@@ -225,7 +225,7 @@ select {
 .btn1 {
     width: 100%;
     height: 100%;
-    border-radius: 50px;
+    border-radius: 3.125rem;
     display: flex;
     justify-content: center;
     align-items: center;
