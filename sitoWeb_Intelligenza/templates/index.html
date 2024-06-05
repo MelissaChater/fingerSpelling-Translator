@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAFT</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body onload="updateGauges()">
+    <main>
+        <div class="container" id="container">
+            <div class="logo">
+                <img src="Images/logo.png" alt="RAFT logo" />
+            </div>
+            <button class="btn">
+                RAFT - Real-time Automated Fingerspelling Translator
+            </button>
+        </div>
+    </main>
+    <header id="second-header">
+        <div class="logoPiccolo">
+            <img src="Images/logo.png" alt="Logo del sito">
+            <h1>RAFT - Real-time Automated Fingerspelling Translator</h1>
+        </div>
+    </header>
+    <main id="second-main">
+        <div class="main-container">
+            <!--
+			TODO: Far funzionare lo streaming
+			<div class="camera-container">
+                <img src="http://localhost:8081" alt="Streaming dalla telecamera Raspberry Pi">
+            </div>-->
+            <div class="input-container">
+                <div class="wrapper">
+                    <div class="option">
+                      <input checked="" value="option1" name="btn1" type="radio" class="input" />
+                      <div class="btn1">
+                        <span class="span">IMG</span>
+                      </div>
+                    </div>
+                    <div class="option">
+                      <input value="option2" name="btn1" type="radio" class="input" />
+                      <div class="btn1">
+                        <span class="span">PC Cam</span>
+                      </div>
+                    </div>
+                    <div class="option">
+                      <input value="option3" name="btn1" type="radio" class="input" />
+                      <div class="btn1">
+                        <span class="span">Rasp Cam</span>
+                      </div>
+                    </div>
+                </div>
+                <div id="valore" class="testointelligenza">
+                        il testo apparirà qui
+                </div>
+                <button class="download-btn" onclick="downloadText()">Scarica Testo</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

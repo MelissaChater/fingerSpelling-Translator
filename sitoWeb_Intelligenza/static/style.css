@@ -1,0 +1,246 @@
+@font-face {
+    font-family: "TrenchThin";
+    src: url('Font/TrenchThin-16R0.otf');
+}
+
+body {
+    background: #bac7d7;
+    color: #40525e;
+    font-family: "TrenchThin", serif;
+    margin: 0;
+    overflow: hidden; /* Rimuove la barra di scorrimento */
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    flex: 1;
+    position: relative; 
+}
+
+.testointelligenza {
+    width: 100%;
+    height: 300px;
+    resize: none;
+    margin-bottom: 20px;
+    background-color: lightgray;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+button.download-btn {
+    margin-top: auto;
+    font-family: "TrenchThin", serif;
+    align-self: center; 
+    padding: 10px 20px;
+    background-color: lightgray;
+    color: #009cfc;
+    border: none;
+    cursor: pointer;
+    border-radius: 99px;
+    font-size: 1.2rem;
+    border: 3px solid #009cfc ;
+}
+
+.btn {
+    transition: all 0.3s ease-in-out;
+    font-family: "TrenchThin", serif;
+    width: auto;
+    height: auto;
+    border-radius: 5rem;
+    background-image: linear-gradient(135deg, #80a0b5 0%, #3b7b9f 100%);
+    box-shadow: 0 20px 30px -6px rgba(120, 137, 153, 0.9);
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-size: 1.4rem;
+    color:white;
+    padding: 1rem 2rem;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.btn:hover {
+    transform: translateY(3px);
+    box-shadow: none;
+}
+
+.btn:active {
+    opacity: 0.5;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.logo {
+    margin-bottom: 2rem;
+}
+
+.logo img {
+    width: 18rem;
+    height: 12rem;
+    opacity: 0.8;
+    transition: transform 0.3s ease-in-out, opacity 2s ease-in-out;
+    z-index: 0;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+.logo img.expand {
+    transform: scale(1.5);
+    opacity: 0;
+    transition: transform 1s ease-in-out, opacity 4s ease-in-out;
+}
+
+header {
+    background-color: #88919C;
+    color: #202a30 ;
+    padding: 2rem;
+}
+
+.logoPiccolo {
+    display: flex;
+    align-items: center;
+}
+
+.logoPiccolo img {
+    width: 50px;
+    height: 60px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.logoPiccolo h1 {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.input-container {
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #88919C;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 34px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.camera-container img {
+    width: 20rem;
+    height: 30rem;
+}
+
+.main-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+    padding: 2rem 8rem;
+}
+
+@media (max-width: 10rem) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .camera-container,
+    .input-container {
+        width: 50rem;
+    }
+}
+
+.wrapper {
+    --font-color-dark: #11171a;
+    --font-color-light: #11171a;
+    --bg-color: lightgray;
+    --main-color: #009cfc;
+    --secondary-color: #b6c0cb;
+    position: relative;
+    padding-left: 10px;
+    width: 270px;
+    height: 36px;
+    background-color: var(--bg-color);
+    border: 3px solid var(--main-color);
+    border-radius: 1000px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.option {
+    margin-right: 5px;
+    width: 80.5px;
+    height: 28px;
+    position: relative;
+    top: 4px;
+    left: 2px;
+    border-radius: 1000px;
+    transition: 0.25s cubic-bezier(0, 0, 0, 1);
+}
+
+.option:last-child {
+    margin-right: 4px;
+}
+
+.option:hover {
+    background-color: var(--secondary-color);
+}
+
+.option:hover .span {
+    color: var(--font-color-light);
+}
+
+.input {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    appearance: none;
+    cursor: pointer;
+}
+
+.btn1 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.span {
+    color: var(--font-color-dark);
+}
+
+.input:checked + .btn1 {
+    background-color: var(--main-color);
+    transition: 0.2s cubic-bezier(0, 0, 0, 1);
+}
+
+.input:checked + .btn1 .span {
+    color: var(--font-color-light);
+    transition: 0.25s cubic-bezier(0, 0, 0, 1);
+}
